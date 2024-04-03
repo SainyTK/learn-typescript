@@ -37,8 +37,16 @@ for(let i=0;i< persons.length; i++ )
         console.log( key, value  )
 
 for (let item in persons)  
-   console.log( item, persons[item])
+   console.log(item, persons[item])
  
+type PersonKeys = "name" | "surname" | "age";
+
+for( let item in persons )
+    for( let subitem in persons[item]) 
+       console.log(persons[item][subitem as PersonKeys])
+
+console.log( persons[0]["name"])
+
 type T =  "de" | "dbiz" | "computing";
 type StudentType = Record< T ,
     { 
@@ -69,4 +77,5 @@ students.computing = {
     name: "Ja Morant", 
     age: 19, 
 }
+
 console.log(students.computing.age);
