@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/SainyTK/learn-typescript#readme",
   "dependencies": {
+    "axios": "^1.6.8",
     "readline-sync": "^1.4.10"
   },
   "devDependencies": {
